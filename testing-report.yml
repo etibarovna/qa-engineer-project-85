@@ -1,5 +1,17 @@
 ---
 - summary: |
+    Успешная авторизация по email
+  status: pass
+
+- summary: |
+     Успешная авторизация по учетке Github
+  status: pass
+
+- summary: |
+     Успешная авторизация по учетке Discord
+  status: pass
+  
+- summary: |
     Пользователь успешно может начать игру с ботом
   status: pass
 
@@ -8,7 +20,15 @@
   status: pass
 
 - summary: |
+    Пользователь успешно может начать игру с другом по присланной ссылке 
+  status: pass
+
+- summary: |
     Пользователь успешно может начать игру с рандомным пользователем 
+  status: pass
+
+- summary: |
+    Пользователь успешно может присоединиться к игре с рандомным пользователем
   status: pass
 
 - summary: |
@@ -24,7 +44,7 @@
   status: pass 
 
 - summary: |
-    У пользователя корректно отображается кнопка check и активна
+    У пользователя корректно отображается кнопка check и активна и работает корректно
   status: pass
 
 - summary: |
@@ -40,21 +60,61 @@
   status: pass
 
 - summary: |
+    Заврешение игры при нажатии на кнопку Give up флажок
+  status: pass
+
+- summary: |
     У проигравшего есть возможность закончить игру
   status: pass
 
 - summary: |
-    Корректное отображение с мобильного устройства
+    Успешная смена языка в процессе игры
   status: pass
 
 - summary: |
-    Корректное отображение в Google chrome
+    Успешная смена языка программирования в процессе игры
   status: pass
 
 - summary: |
-    Корректное отображение в Opera
+    Успешный сброс кода в редакторе
   status: pass
 
 - summary: |
-    Корректное отображение в Mozilla
+    Корректное отображение главной страницы с мобильного устройства
+  status: pass
+
+- summary: |
+    Корректное отображение раздела Statistics с мобильного устройства
+  status: fail
+
+- summary: |
+    Корректное отображение раздела раздела Users rating с мобильного устройства
+  status: fail
+
+- summary: |
+    Корректное отображение страницы игры с мобильного устройства 
+  status: fail
+
+- summary: |
+     Корректное отображение в Google chrome главной страницы
+  status: pass
+
+- summary: |
+     Корректное отображение в Google chrome страницы игры
+  status: pass
+
+- summary: |
+     Корректное отображение раздела Statistics в Google chrome
+  status: pass
+
+- summary: |
+     Корректное отображение в Mozilla главной страницы
+  status: pass
+
+- summary: |
+     Корректное отображение в Mozilla страницы игры
+  status: pass
+
+- summary: |
+     Корректное отображение раздела Statistics в  Mozilla
   status: pass
