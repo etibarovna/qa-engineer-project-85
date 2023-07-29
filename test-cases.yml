@@ -1,5 +1,58 @@
 ---
 - summary: |
+    Успешная авторизация по email
+  requirement: |
+    У пользователя должна быть возможность авторизации
+  prerequisites: |
+    Пользователь находится на странице https://codebattle.hexlet.io/#lobby
+  test-data: |
+    email ‘email@email.com’
+    Password ‘123empty!’
+  steps:
+    - нажимаем кнопку Singh in
+     - заполняем поле email 
+    - заполняем поле Password
+    - нажимаем кнопку Submit
+  expected-result: |
+    Пользователь должен успешно авторизоваться
+
+- summary: |
+    Успешная авторизация по учетке Github
+  requirement: |
+    У пользователя должна быть возможность авторизации
+  prerequisites: |
+    Пользователь находится на странице https://codebattle.hexlet.io/#lobby
+  test-data: |
+    email address ‘email@email.com’
+    Password ‘123empty!’
+  steps:
+    - нажимаем кнопку Sign in
+     - нажимаем кнопку Sign in with Github
+    - заполняем поле Username or email address
+    - заполняем поле Password
+    - нажимаем кнопку Sign in
+  expected-result: |
+    Пользователь должен успешно авторизоваться
+
+- summary: |
+    Успешная авторизация по учетке Discord
+  requirement: |
+    У пользователя должна быть возможность авторизации
+  prerequisites: |
+    Пользователь находится на странице https://codebattle.hexlet.io/#lobby
+  test-data: |
+    Адрес электронной почты или номер телефона ‘email@email.com’
+    Пароль ‘123empty!’
+  steps:
+    - нажимаем кнопку Sign in
+     - нажимаем кнопку Sign in with Discord
+    - заполняем поле Адрес электронной почты или номер телефона
+    - заполняем поле Пароль
+    - нажимаем кнопку Вход
+  expected-result: |
+    Пользователь должен успешно авторизоваться
+
+- summary: |
     Пользователь успешно может начать игру с ботом 
   requirement: |
     Пользователь может играть с ботом 
