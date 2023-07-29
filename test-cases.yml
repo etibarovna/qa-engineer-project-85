@@ -342,7 +342,7 @@
     - нажимаем кнопку Create Battle
     - набираем код return temperature + 275
     - нажимаем кнопку Reset editor
-   expected-result: |
+  expected-result: |
     Происходит успешный сброс кода в редакторе 
     
 #тестирование нефункциональных требований
