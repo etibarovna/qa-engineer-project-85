@@ -10,7 +10,7 @@
     Password ‘123empty!’
   steps:
     - нажимаем кнопку Singh in
-     - заполняем поле email 
+    - заполняем поле email 
     - заполняем поле Password
     - нажимаем кнопку Submit
   expected-result: |
@@ -27,7 +27,7 @@
     Password ‘123empty!’
   steps:
     - нажимаем кнопку Sign in
-     - нажимаем кнопку Sign in with Github
+    - нажимаем кнопку Sign in with Github
     - заполняем поле Username or email address
     - заполняем поле Password
     - нажимаем кнопку Sign in
@@ -62,6 +62,7 @@
     empty
   steps:
     - нажимаем кнопку create a game
+    - выбираем параметры игры level - 4 звездочки, game type - with a bot, time control - 10 минут,  Choose task by name or tags - celsius to kelvin
     - выбираем игру с ботом
     - начинаем игру
   expected-result: |
@@ -147,11 +148,11 @@
   requirement: |
     Оба пользователя должны видеть два редактора слева - свой редактор справа - соперника.      
   prerequisites: |
-    Пользователь успешно зарегистрирован и авторизован. Находится на странице 
+    Пользователь успешно зарегистрирован и авторизован. Находится на странице https://codebattle.hexlet.io/#lobby
   test-data: |
     empty
   steps:
-    - нажимаем кнопку create games
+    - нажимаем кнопку create a game
     - выбираем игру с ботом
     - начинаем игру
   expected-result: |
@@ -162,11 +163,11 @@
   requirement: |
     Наверху экрана находится время игры и ниже - задание 
   prerequisites: |
-    Пользователь успешно зарегистрирован и авторизован. Находится на странице игры
+    Пользователь успешно зарегистрирован и авторизован. Находится на странице https://codebattle.hexlet.io/#lobby
   test-data: |
     no data
   steps:
-    - нажимаем кнопку create games
+    - нажимаем кнопку create a game
     - выбираем игру с ботом
     - начинаем игру
   expected-result: |
