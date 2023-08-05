@@ -63,8 +63,7 @@
   steps:
     - нажимаем кнопку create a game
     - выбираем параметры игры level - 4 звездочки, game type - with a bot, time control - 10 минут,  Choose task by name or tags - celsius to kelvin
-    - выбираем игру с ботом
-    - начинаем игру
+    - нажимаем кнопку Create Battle
   expected-result: |
     Пользователь должен попасть на страницу игры с ботом
 
@@ -78,8 +77,11 @@
     empty
   steps:
     - нажимаем кнопку create a game
-    - выбираем игру с другом
+    - выбираем параметры игры level - 2 звездочки, 
+    - выбираем game type - with a friend, 
     - выбираем друга из списка
+    - выбираем time control - 15 минут,  
+    - выбираем Choose task by name or tags - age to days
     - нажимаем кнопку Create Invaite
   expected-result: |
     Успешная отправка приглашения выбранном другу
@@ -108,8 +110,10 @@
     empty
   steps:
     - нажимаем кнопку create a game
-    - выбираем параметры игры уровень сложности, время выполнения, конкретную или рандомную задачу 
-    - выбираем игру с другим пользователем
+    - выбираем параметры игры level - 1 звездочка, 
+    - выбираем game type - with other users,
+    - выбираем time control - 20 минут,  
+    - выбираем Choose task by name or tags - celsius to kelvin
     - нажимаем кнопку Create Battle
   expected-result: |
     Успешное ожидание подключения второго игрока
@@ -139,7 +143,12 @@
   test-data: |
     empty
   steps:
-    - нажимаем кнопку create games
+    - нажимаем кнопку create a game
+    - выбираем параметры игры level - 4 звездочки,
+    - выбираемм game type - with a bot, 
+    - выбираем time control - 10 минут,  
+    - выбираем Choose task by name or tags - celsius to kelvin
+    - нажимаем кнопку Create Battle
   expected-result: |
     Пользователь должен попасть на страницу выбора игры и соперника 
 
@@ -153,7 +162,11 @@
     empty
   steps:
     - нажимаем кнопку create a game
-    - выбираем игру с ботом
+    - выбираем параметры игры level - 2 звездочки, 
+    - выыбираем game type - with a bot, 
+    - выбираем time control - 8 минут,  
+    - выбираем Choose task by name or tags - age to days
+    - нажимаем кнопку Create Battle
     - начинаем игру
   expected-result: |
     У пользователя корректно отображаются оба редактора кода слева - свой редактор справа - соперника.  
@@ -168,8 +181,11 @@
     no data
   steps:
     - нажимаем кнопку create a game
-    - выбираем игру с ботом
-    - начинаем игру
+    - выбираем параметры игры level - 3 звездочки,
+    - выбираемм game type - with a bot, 
+    - выбираем time control - 60 минут,  
+    - выбираем Choose task by name or tags - celsius to kelvin
+    - нажимаем кнопку Create Battle
   expected-result: |
     У пользователя корректно отображаются время игры и задание наверху экрана
 
@@ -242,7 +258,7 @@
   requirement: |
     У пользователя есть возможность сдаться
   prerequisites: |
-    Пользователь успешно зарегистрирован и авторизован. Находится на странице игры https://codebattle.hexlet.io/#lobby
+    Пользователь успешно зарегистрирован и авторизован. Находится на странице https://codebattle.hexlet.io/#lobby
   test-data: |
     no data
   steps:
@@ -263,10 +279,17 @@
   requirement: |
     проигравший тоже может выйти из игры
   prerequisites: |
-    Пользователь успешно зарегистрирован и авторизован. Находится на странице игры, один из игроков указал верное решение
+    Пользователь успешно зарегистрирован и авторизован. Находится на странице https://codebattle.hexlet.io/#lobby
   test-data: |
     no data
   steps:
+    - нажимаем кнопку create a game
+    - выбираем игру с ботом
+    - выбираем уровень сложности 4 звёздочки
+    - выбираем время прохождения 8 минут
+    - выбираем игру celsius to kelvin
+    - нажимаем кнопку Create Battle
+    - оппонент указывает верное решение первым 
     - в модальном окне о победителе нажать кнопку i ll be back
     - нажать на кнопку Back to home
   expected-result: |
@@ -277,10 +300,17 @@
   requirement: |
     может доиграть до конца
   prerequisites: |
-    Пользователь успешно зарегистрирован и авторизован. Находится на странице игры, один из игроков указал верное решение
+    Пользователь успешно зарегистрирован и авторизован. Находится на странице https://codebattle.hexlet.io/#lobby
   test-data: |
     no data
   steps:
+    - нажимаем кнопку create a game
+    - выбираем игру с ботом
+    - выбираем уровень сложности 4 звёздочки
+    - выбираем время прохождения 8 минут
+    - выбираем игру celsius to kelvin
+    - нажимаем кнопку Create Battle
+    - оппонент указывает верное решение первым 
     - в модальном окне о победителе нажать кнопку i ll be back
   expected-result: |
     проигравший продолжает поиск решения неограничен по времени
